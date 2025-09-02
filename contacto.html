@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Política de Cookies — Novaris Data</title>
-  <meta name="description" content="Política de cookies del sitio de Novaris Data.">
+  <title>Contacto — Novaris Data</title>
+  <meta name="description" content="Agenda una llamada o envíanos tu necesidad técnica; respondemos con una propuesta clara.">
   <link rel="icon" type="image/png" href="/assets/img/favicon.png" sizes="32x32">
   <link rel="apple-touch-icon" href="/assets/img/favicon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta property="og:title" content="Política de Cookies — Novaris Data">
-  <meta property="og:description" content="Política de cookies del sitio de Novaris Data.">
+  <meta property="og:title" content="Contacto — Novaris Data">
+  <meta property="og:description" content="Agenda una llamada o envíanos tu necesidad técnica; respondemos con una propuesta clara.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.novarisdata.com/">
   <meta property="og:image" content="https://www.novarisdata.com/assets/img/logo.png">
@@ -69,9 +69,19 @@
       </nav>
     </div>
   </header>
-<main id="content" class="section container prose">
-  <h1>Política de Cookies</h1>
-  <p>Podemos usar cookies necesarias. Si activamos analítica, será sin cookies o con consentimiento previo.</p>
+<main id="content" class="section container">
+  <header class="section__header"><h1>Contacto</h1><p>Responderemos a la brevedad.</p></header>
+  <form id="contact-form" class="contact-form" onsubmit="return buildMailto(event)">
+    <div class="form-row"><label for="nombre">Nombre</label><input id="nombre" required placeholder="Tu nombre"></div>
+    <div class="form-row"><label for="email">Email</label><input id="email" type="email" required placeholder="tu@email.com"></div>
+    <div class="form-row"><label for="asunto">Asunto</label><input id="asunto" required placeholder="Proyecto / Consulta"></div>
+    <div class="form-row"><label for="mensaje">Mensaje</label><textarea id="mensaje" rows="6" required placeholder="Contexto, objetivo y plazo."></textarea></div>
+    <button class="btn btn--primary" type="submit">Enviar</button>
+    <p class="muted small">Se abrirá tu cliente de correo con el contenido listo.</p>
+  </form>
+  <div class="mtop small">
+    <p><strong>Email:</strong> <a href="mailto:contact@novarisdata.com">contact@novarisdata.com</a> · <strong>Tel:</strong> +56 9 29621546</p>
+  </div>
 </main>
   <footer class="footer">
     <div class="container footer__grid">
