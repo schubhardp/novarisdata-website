@@ -14,16 +14,18 @@
   <meta property="og:url" content="https://www.novarisdata.com/">
   <meta property="og:image" content="https://www.novarisdata.com/assets/img/logo.png">
   <meta name="twitter:card" content="summary_large_image">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/styles.css">
   <script type="application/ld+json">
-  {
+{
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Novaris Data",
   "url": "https://www.novarisdata.com/",
   "logo": "https://www.novarisdata.com/assets/img/logo.png",
-  "sameAs": [],
+  "sameAs": [
+    "https://www.linkedin.com/company/novarisdata"
+  ],
   "foundingDate": "2024",
   "employee": {
     "@type": "QuantitativeValue",
@@ -45,9 +47,10 @@
     }
   ]
 }
-  </script>
+</script>
 </head>
 <body>
+
   <a class="skip-link" href="#content">Saltar al contenido</a>
   <header class="header">
     <div class="container nav">
@@ -59,22 +62,26 @@
         <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
       </button>
       <nav id="menu" class="menu" aria-label="Primary">
-        
         <a href="/#servicios">Servicios</a>
         <a href="/proyectos.html">Proyectos</a>
         <a href="/sobre.html">Sobre</a>
         <a href="/servicios.html">Planes</a>
         <a href="/contacto.html" class="btn btn--primary">Hablemos</a>
         <a href="/en/" class="lang">EN</a>
+        <a href="https://www.linkedin.com/company/novarisdata" target="_blank" rel="noopener" class="lang" aria-label="LinkedIn">in</a>
       </nav>
     </div>
   </header>
+
+
 <main id="content" class="section container">
   <header class="section__header"><h1>Proyectos</h1><p>Muestra de capacidades.</p></header>
   <section id="medidate" class="case"><h2>MediDate</h2><p>Agenda médica con Django, PostgreSQL y despliegue.</p></section><hr>
   <section id="books" class="case"><h2>Book Manager</h2><p>React + FastAPI + PostgreSQL. JWT y CRUD.</p></section><hr>
   <section id="legal" class="case"><h2>Legal Studio</h2><p>Sitio corporativo con agenda y SEO.</p></section>
 </main>
+  
+
   <footer class="footer">
     <div class="container footer__grid">
       <div class="footer__brand">
@@ -85,12 +92,14 @@
         <a href="/privacy.html">Privacidad</a>
         <a href="/cookies.html">Cookies</a>
         <a href="/sitemap.xml">Sitemap</a>
+        <a href="https://www.linkedin.com/company/novarisdata" target="_blank" rel="noopener">LinkedIn</a>
       </div>
       <div class="footer__contact">
         <a href="mailto:contact@novarisdata.com" class="btn btn--ghost">contact@novarisdata.com</a>
       </div>
     </div>
-    <div class="container small muted">© 2025 Novaris Data · Última actualización: 2025-09-02</div>
+    <div class="container small muted">© <span id="year"></span> Novaris Data</div>
   </footer>
   <script src="/assets/js/main.js"></script>
+
 </body></html>
