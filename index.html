@@ -3,94 +3,138 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Novaris Data — Consulting · Development · IT Solutions</title>
-  <meta name="description" content="Soluciones tecnológicas a medida: consultoría IT, desarrollo de software y gestión de datos.">
-
-  <!-- Favicon -->
-  <link rel="icon" href="assets/img/favicon.png" type="image/png">
-
-  <!-- Estilos -->
-  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Novaris Data — Desarrollo Web, Backend en Python y Bases de Datos</title>
+  <meta name="description" content="Consultora IT: desarrollo web, backend en Python (Django/FastAPI) e ingeniería/administración de datos (PostgreSQL, Oracle, MySQL).">
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/assets/img/favicon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta property="og:title" content="Novaris Data — Desarrollo Web, Backend en Python y Bases de Datos">
+  <meta property="og:description" content="Consultora IT: desarrollo web, backend en Python (Django/FastAPI) e ingeniería/administración de datos (PostgreSQL, Oracle, MySQL).">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.novarisdata.com/">
+  <meta property="og:image" content="https://www.novarisdata.com/assets/img/logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Novaris Data",
+  "url": "https://www.novarisdata.com/",
+  "logo": "https://www.novarisdata.com/assets/img/logo.png",
+  "sameAs": [],
+  "foundingDate": "2024",
+  "employee": {
+    "@type": "QuantitativeValue",
+    "minValue": 2,
+    "maxValue": 10
+  },
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "contactType": "sales",
+      "email": "contact@novarisdata.com",
+      "telephone": "+56 9 29621546",
+      "areaServed": "CL, AR, DE, ES",
+      "availableLanguage": [
+        "es",
+        "en",
+        "de"
+      ]
+    }
+  ]
+}
+  </script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <a class="brand" href="/">
-        <img src="assets/img/logo.png" alt="Novaris Data" class="brand-logo">
+  <a class="skip-link" href="#content">Saltar al contenido</a>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="/" aria-label="Novaris Data">
+        <img src="/assets/img/logo.png" alt="Novaris Data" class="brand-logo">
         <span class="brand-name">Novaris Data</span>
       </a>
-      <nav class="nav">
-        <a href="#servicios">Servicios</a>
-        <a href="#contacto">Contacto</a>
-        <a href="privacy.html" rel="nofollow">Privacidad</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+        <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
+      </button>
+      <nav id="menu" class="menu" aria-label="Primary">
+        
+        <a href="/#servicios">Servicios</a>
+        <a href="/proyectos.html">Proyectos</a>
+        <a href="/sobre.html">Sobre</a>
+        <a href="/servicios.html">Planes</a>
+        <a href="/contacto.html" class="btn btn--primary">Hablemos</a>
+        <a href="/en/" class="lang">EN</a>
       </nav>
     </div>
   </header>
-
-  <section class="hero">
-    <div class="pattern"></div>
-    <div class="container hero-inner">
-      <h1>Consulting · Development · IT Solutions</h1>
-      <p>Diseñamos e implementamos soluciones tecnológicas para modernizar procesos, mejorar la calidad de la información y habilitar decisiones basadas en datos.</p>
-      <div class="cta-row">
-        <a class="btn primary" href="mailto:contact@novarisdata.com">Hablemos</a>
-        <a class="btn ghost" href="#servicios">Ver servicios</a>
+<section class="hero">
+  <div class="container hero__grid">
+    <div class="hero__copy">
+      <h1>Soluciones IT <span class="grad">rápidas, seguras y escalables</span></h1>
+      <p>Modernizamos procesos con software de calidad: web apps, APIs en Python y bases de datos optimizadas.</p>
+      <div class="hero__cta">
+        <a href="/contacto.html" class="btn btn--primary">Agenda una llamada</a>
+        <a href="/servicios.html" class="btn btn--ghost">Ver planes</a>
       </div>
+      <div class="hero__meta"><span>🔒 Seguridad por defecto</span><span>📈 Métricas y observabilidad</span><span>⚙️ CI/CD</span></div>
     </div>
-  </section>
-
-  <section id="servicios" class="section">
-    <div class="container">
-      <h2>Nuestros servicios</h2>
-      <div class="grid">
-        <article class="card">
-          <h3>Consultoría IT</h3>
-          <p>Análisis, arquitectura y planes de implementación con foco en resultados y seguridad.</p>
-        </article>
-        <article class="card">
-          <h3>Desarrollo</h3>
-          <p>Aplicaciones web y servicios backend escalables, testeados y mantenibles.</p>
-        </article>
-        <article class="card">
-          <h3>Gestión de Datos</h3>
-          <p>Diseño, administración y optimización de bases de datos.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="contacto" class="section muted">
-    <div class="container contact">
-      <h2>Contacto</h2>
-      <p>¿Tienes un proyecto o reto técnico? Cuéntanos y vemos la mejor forma de ayudarte.</p>
-      <a class="btn primary" href="mailto:contact@novarisdata.com">contact@novarisdata.com</a>
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <small>© <span id="year"></span> Novaris Data. Todos los derechos reservados.</small>
-      <nav class="legal">
-        <a href="privacy.html">Privacidad</a>
-        <a href="cookies.html">Cookies</a>
-      </nav>
-    </div>
-  </footer>
-
-  <!-- Banner de cookies -->
-  <div id="cookie-banner" class="cookie-banner" hidden>
-    <div class="cookie-inner">
-      <p>Usamos cookies esenciales para el correcto funcionamiento del sitio. <a href="cookies.html">Más info</a>.</p>
-      <div class="cookie-actions">
-        <button id="cookie-accept" class="btn primary small">Aceptar</button>
-        <button id="cookie-decline" class="btn ghost small">Rechazar</button>
-      </div>
+    <div class="hero__card" aria-hidden="true">
+      <div class="kpi"><div class="kpi__value">99.9%</div><div class="kpi__label">Disponibilidad</div></div>
+      <div class="kpi"><div class="kpi__value">~50ms</div><div class="kpi__label">TTFB</div></div>
+      <div class="hero__badge">Python • Django • FastAPI • PostgreSQL</div>
     </div>
   </div>
-
-  <script src="assets/js/main.js" defer></script>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+</section>
+<main id="content">
+  <section id="servicios" class="section container">
+    <header class="section__header">
+      <h2>Servicios</h2>
+      <p>Consultoría IT, desarrollo de software y gestión de datos.</p>
+    </header>
+    <div class="grid-3">
+      <article class="card"><h3>Web</h3><p>Landing y sitios corporativos con SEO y performance.</p></article>
+      <article class="card"><h3>Backend</h3><p>APIs con Django/FastAPI, auth y pruebas.</p></article>
+      <article class="card"><h3>Datos/DBA</h3><p>PostgreSQL, Oracle, MySQL: diseño, tuning y backups.</p></article>
+    </div>
+  </section>
+  <section id="proyectos" class="section section--alt">
+    <div class="container">
+      <header class="section__header">
+        <h2>Proyectos</h2>
+        <p>Casos y demos que muestran el enfoque end‑to‑end.</p>
+      </header>
+      <div class="grid-3">
+        <article class="card card--case"><h3>MediDate</h3><p>Agenda médica en Django, roles y PostgreSQL.</p><a class="link" href="/proyectos.html#medidate">Ver →</a></article>
+        <article class="card card--case"><h3>Book Manager</h3><p>React + FastAPI + PostgreSQL con JWT.</p><a class="link" href="/proyectos.html#books">Ver →</a></article>
+        <article class="card card--case"><h3>Legal Studio</h3><p>Sitio y agenda para estudio jurídico.</p><a class="link" href="/proyectos.html#legal">Ver →</a></article>
+      </div>
+    </div>
+  </section>
+  <section class="cta">
+    <div class="container cta__grid">
+      <div><h2>¿Listo para empezar?</h2><p>Cuéntanos tu objetivo y proponemos un plan.</p></div>
+      <a class="btn btn--primary btn--lg" href="/contacto.html">Contactar</a>
+    </div>
+  </section>
+</main>
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="/assets/img/logo.png" alt="Novaris Data" class="brand-logo">
+        <p>Desarrollo web, backend en Python y gestión de bases de datos.</p>
+      </div>
+      <div class="footer__links">
+        <a href="/privacy.html">Privacidad</a>
+        <a href="/cookies.html">Cookies</a>
+        <a href="/sitemap.xml">Sitemap</a>
+      </div>
+      <div class="footer__contact">
+        <a href="mailto:contact@novarisdata.com" class="btn btn--ghost">contact@novarisdata.com</a>
+      </div>
+    </div>
+    <div class="container small muted">© 2025 Novaris Data · Última actualización: 2025-09-02</div>
+  </footer>
+  <script src="/assets/js/main.js"></script>
+</body></html>

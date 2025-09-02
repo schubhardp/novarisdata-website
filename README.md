@@ -1,25 +1,45 @@
-# Novaris Data 🌐
+# Novaris Data — Bilingual Website (ES/EN)
 
-**Consulting · Development · IT Solutions**
+Estructura estática lista para Cloudflare Pages. Todos los estáticos viven en `/assets/`.
 
-Novaris Data provides tailored technology solutions in IT consulting, software development, and data management.  
-We combine expertise in backend systems, web applications, and databases to help organizations modernize processes, improve information quality, and enable data-driven decision making.  
+## Estructura
+```
+/
+├─ index.html
+├─ servicios.html
+├─ proyectos.html
+├─ sobre.html
+├─ contacto.html
+├─ privacy.html
+├─ cookies.html
+├─ 404.html
+├─ en/
+│  ├─ index.html
+│  ├─ services.html
+│  ├─ projects.html
+│  ├─ about.html
+│  ├─ contact.html
+│  ├─ privacy.html
+│  └─ cookies.html
+├─ assets/
+│  ├─ css/styles.css
+│  ├─ js/main.js
+│  └─ img/{logo.png, favicon.png}
+├─ .well-known/security.txt
+├─ CNAME
+├─ robots.txt
+├─ sitemap.xml
+└─ site.webmanifest
+```
+## Deploy (Cloudflare Pages)
+- Framework: **None** (sin build). Output: **/**.
+- Dominio: `www.novarisdata.com` (fijado por `CNAME`).
 
-## 🔧 What We Do
-- **IT Consulting**: Analysis, planning, and implementation of technology solutions.  
-- **Software Development**: Secure, scalable backend systems and modern web applications.  
-- **Data Management**: Database design, administration, and optimization (PostgreSQL, Oracle, MySQL).  
+## Datos de contacto
+- Sitio: https://www.novarisdata.com
+- Email: contact@novarisdata.com
+- Tel: +56 9 29621546
 
-## 🚀 How We Work
-We focus on clear methodologies, measurable deliverables, and practical solutions.  
-Each project starts with understanding our client’s needs, designing viable architectures, and delivering with quality and security standards.  
-
-## 🌍 Our Approach
-Novaris Data operates 100% digitally and collaborates with both business and technology teams to deliver scalable, reliable, and growth-oriented results.  
-
----
-
-🔗 **Website:** https://www.novarisdata.com  
-📅 **Founded:** 2024  
-👥 **Team Size:** 2-10 employees  
-📍 **Sector:** IT Services & Consulting  
+## SEO
+- `sitemap.xml` con ES/EN.
+- `robots.txt`, OpenGraph, JSON-LD Organization.

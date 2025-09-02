@@ -1,15 +1,15 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Política de Cookies — Novaris Data</title>
-  <meta name="description" content="Política de cookies del sitio de Novaris Data.">
+  <title>Contact — Novaris Data</title>
+  <meta name="description" content="Book a call or send your requirements; we’ll reply with a clear proposal.">
   <link rel="icon" type="image/png" href="/assets/img/favicon.png" sizes="32x32">
   <link rel="apple-touch-icon" href="/assets/img/favicon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta property="og:title" content="Política de Cookies — Novaris Data">
-  <meta property="og:description" content="Política de cookies del sitio de Novaris Data.">
+  <meta property="og:title" content="Contact — Novaris Data">
+  <meta property="og:description" content="Book a call or send your requirements; we’ll reply with a clear proposal.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.novarisdata.com/">
   <meta property="og:image" content="https://www.novarisdata.com/assets/img/logo.png">
@@ -48,10 +48,10 @@
   </script>
 </head>
 <body>
-  <a class="skip-link" href="#content">Saltar al contenido</a>
+  <a class="skip-link" href="#content">Skip to content</a>
   <header class="header">
     <div class="container nav">
-      <a class="brand" href="/" aria-label="Novaris Data">
+      <a class="brand" href="/en/" aria-label="Novaris Data">
         <img src="/assets/img/logo.png" alt="Novaris Data" class="brand-logo">
         <span class="brand-name">Novaris Data</span>
       </a>
@@ -60,35 +60,45 @@
       </button>
       <nav id="menu" class="menu" aria-label="Primary">
         
-        <a href="/#servicios">Servicios</a>
-        <a href="/proyectos.html">Proyectos</a>
-        <a href="/sobre.html">Sobre</a>
-        <a href="/servicios.html">Planes</a>
-        <a href="/contacto.html" class="btn btn--primary">Hablemos</a>
-        <a href="/en/" class="lang">EN</a>
+        <a href="/en/#services">Services</a>
+        <a href="/en/projects.html">Projects</a>
+        <a href="/en/about.html">About</a>
+        <a href="/en/services.html">Plans</a>
+        <a href="/en/contact.html" class="btn btn--primary">Contact</a>
+        <a href="/" class="lang">ES</a>
       </nav>
     </div>
   </header>
-<main id="content" class="section container prose">
-  <h1>Política de Cookies</h1>
-  <p>Podemos usar cookies necesarias. Si activamos analítica, será sin cookies o con consentimiento previo.</p>
+<main id="content" class="section container">
+  <header class="section__header"><h1>Contact</h1><p>We’ll get back to you shortly.</p></header>
+  <form id="contact-form" class="contact-form" onsubmit="return buildMailto(event)">
+    <div class="form-row"><label for="name">Name</label><input id="name" required placeholder="Your name"></div>
+    <div class="form-row"><label for="email">Email</label><input id="email" type="email" required placeholder="you@email.com"></div>
+    <div class="form-row"><label for="subject">Subject</label><input id="subject" required placeholder="Project / Inquiry"></div>
+    <div class="form-row"><label for="message">Message</label><textarea id="message" rows="6" required placeholder="Context, goal and timeline."></textarea></div>
+    <button class="btn btn--primary" type="submit">Send</button>
+    <p class="muted small">Your email client will open with content ready.</p>
+  </form>
+  <div class="mtop small">
+    <p><strong>Email:</strong> <a href="mailto:contact@novarisdata.com">contact@novarisdata.com</a> · <strong>Tel:</strong> +56 9 29621546</p>
+  </div>
 </main>
   <footer class="footer">
     <div class="container footer__grid">
       <div class="footer__brand">
         <img src="/assets/img/logo.png" alt="Novaris Data" class="brand-logo">
-        <p>Desarrollo web, backend en Python y gestión de bases de datos.</p>
+        <p>Web development, Python backend and database management.</p>
       </div>
       <div class="footer__links">
-        <a href="/privacy.html">Privacidad</a>
-        <a href="/cookies.html">Cookies</a>
+        <a href="/en/privacy.html">Privacy</a>
+        <a href="/en/cookies.html">Cookies</a>
         <a href="/sitemap.xml">Sitemap</a>
       </div>
       <div class="footer__contact">
         <a href="mailto:contact@novarisdata.com" class="btn btn--ghost">contact@novarisdata.com</a>
       </div>
     </div>
-    <div class="container small muted">© 2025 Novaris Data · Última actualización: 2025-09-02</div>
+    <div class="container small muted">© 2025 Novaris Data · Last updated: 2025-09-02</div>
   </footer>
   <script src="/assets/js/main.js"></script>
 </body></html>
