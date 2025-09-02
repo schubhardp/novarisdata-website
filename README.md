@@ -1,6 +1,8 @@
-# Novaris Data — v1.3 (hero con logo grande)
+# Novaris Data — Classic Look (v1.8)
 
-- ES/EN, SEO técnico, OG card, security.txt, robots, sitemap.
-- Header sin texto duplicado; hero con logo grande centrado.
+- Navbar con **isotipo (ND) sin texto** para evitar duplicación con el hero.
+- **Hero con logo grande** sobre gradiente azul→teal (paleta del logo).
+- Sin “planes”: consulta general en **Contacto**.
+- Estructura bilingüe ES/EN y estáticos en `/assets`.
 
-- v1.4: Hero con **logo XL** centrado (H1 accesible oculto), mantiene paleta del logo.
+**Deploy**: Cloudflare Pages, framework None, Output `/`. Dominio via `CNAME`.
