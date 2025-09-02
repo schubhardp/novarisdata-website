@@ -3,45 +3,66 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Política de Privacidad — Novaris Data</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Privacidad — Novaris Data</title>
+  <meta name="description" content="Política de privacidad del sitio de Novaris Data.">
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/assets/img/favicon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="canonical" href="https://www.novarisdata.com/privacy.html"/>
+  <link rel="alternate" href="https://www.novarisdata.com/privacy.html" hreflang="es"/>
+  <link rel="alternate" href="https://www.novarisdata.com/en/privacy.html" hreflang="en"/>
+  <link rel="alternate" href="https://www.novarisdata.com/privacy.html" hreflang="x-default"/>
+  <meta property="og:title" content="Privacidad — Novaris Data">
+  <meta property="og:description" content="Política de privacidad del sitio de Novaris Data.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.novarisdata.com/privacy.html">
+  <meta property="og:image" content="https://www.novarisdata.com/assets/img/og-card.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Novaris Data",
+  "url": "https://www.novarisdata.com/",
+  "logo": "https://www.novarisdata.com/assets/img/logo.png",
+  "sameAs": ["https://www.linkedin.com/company/novarisdata"],
+  "foundingDate": "2024",
+  "contactPoint": [{"@type":"ContactPoint","contactType":"sales","email":"contact@novarisdata.com","telephone":"+56 9 29621546","availableLanguage":["es","en"]}]
+}
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <a class="brand" href="/"><span class="brand-mark">ND</span><span class="brand-name">Novaris Data</span></a>
-      <nav class="nav"><a href="/">Inicio</a></nav>
+  <a class="skip-link" href="#content">Saltar al contenido</a>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="/" aria-label="Novaris Data">
+        <img src="/assets/img/logo.png" alt="Novaris Data" class="brand-logo">
+        <span>Novaris Data</span>
+      </a>
+      <nav class="menu">
+      <a href="/">Inicio</a>
+      <a href="/servicios.html">Servicios</a>
+      <a href="/sobre.html">Sobre</a>
+      <a href="/contacto.html">Contacto</a>
+      <a class="lang" href="/en/">EN</a>
+    </nav>
     </div>
   </header>
-  <main class="legal-page container">
-    <h1>Política de Privacidad</h1>
-    <p>Última actualización: <time id="pdate"></time></p>
-    <p>En Novaris Data respetamos tu privacidad. Esta política describe qué datos procesamos y con qué finalidad.</p>
-    <h2>Datos que podemos procesar</h2>
-    <ul>
-      <li>Datos de contacto que nos envías por correo (nombre, email, contenido del mensaje).</li>
-      <li>Datos técnicos mínimos para servir el sitio (logs del servidor, IP, user‑agent).</li>
-      <li>Preferencia de cookies (estrictamente necesaria) almacenada en tu navegador.</li>
-    </ul>
-    <h2>Finalidades</h2>
-    <ul>
-      <li>Responder consultas y brindar servicios.</li>
-      <li>Mejorar la seguridad y estabilidad del sitio.</li>
-      <li>Cumplimientos legales.</li>
-    </ul>
-    <h2>Base legal</h2>
-    <p>Interés legítimo y, cuando corresponda, tu consentimiento (por ejemplo, para cookies no esenciales).</p>
-    <h2>Conservación</h2>
-    <p>Mantenemos los datos solo el tiempo necesario para cada finalidad o según requisitos legales.</p>
-    <h2>Tus derechos</h2>
-    <p>Puedes solicitar acceso, rectificación o eliminación escribiendo a <a href="mailto:contact@novarisdata.com">contact@novarisdata.com</a>.</p>
-  </main>
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <small>© <span id="year"></span> Novaris Data.</small>
-      <nav class="legal"><a href="cookies.html">Cookies</a></nav>
+  <main id="content" class="section container">
+      <h2>Política de Privacidad</h2>
+      <p>Este sitio procesa sólo lo necesario para su funcionamiento básico y, en su caso, métricas agregadas y anónimas.</p>
+      <p class="small muted">Última actualización: 2025-09-02</p>
+    </main>
+  <footer class="footer">
+    <div class="container small">
+      <img src="/assets/img/logo.png" alt="Novaris Data" class="brand-logo"> Novaris Data — IT Solutions & Consulting<br>
+      <a href="mailto:contact@novarisdata.com">contact@novarisdata.com</a> · Tel: +56 9 29621546 ·
+      <a href="https://www.linkedin.com/company/novarisdata" target="_blank" rel="noopener">LinkedIn</a><br>
+      © <span id="year"></span> Novaris Data
     </div>
   </footer>
-  <script>document.getElementById('year').textContent=new Date().getFullYear();document.getElementById('pdate').textContent=new Date().toLocaleDateString();</script>
+  <script src="/assets/js/main.js"></script>
 </body>
 </html>
