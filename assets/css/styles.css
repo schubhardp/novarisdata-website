@@ -64,3 +64,33 @@ a{color:#9ec5ff;text-decoration:none} a:hover{text-decoration:underline}
   .footer{background:#fff;color:#5b6b82}
   a{color:#0e3a8a}
 }
+
+
+/* v1.4 — Hero with big centered logo */
+.hero.hero--logo{display:flex;align-items:center;justify-content:center;min-height:68vh;
+  background:linear-gradient(90deg,#0e3a8a 0%, #1666d3 45%, #00a6a6 100%);}
+.hero--logo .hero-center{text-align:center}
+.hero--logo .hero-logo{width:min(880px,72vw);height:auto;margin:0 auto 1.2rem auto;display:block;
+  filter:drop-shadow(0 16px 32px rgba(0,0,0,.25))}
+.hero--logo p{color:#f3f8ff;margin:0 0 1.4rem;font-size:1.08rem;opacity:.98}
+@media (max-width:900px){
+  .hero.hero--logo{min-height:56vh}
+  .hero--logo .hero-logo{width:min(640px,78vw)}
+}
+/* visually-hidden for SEO h1 without impacting layout */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+
+/* === v1.5: Palette aligned with original site === */
+:root{
+  --bg-1:#083B5C;   /* deep blue */
+  --bg-2:#07B588;   /* teal/green */
+  --teal:#19C3A6;   /* CTA accent */
+}
+body{background:#061f33}
+/* hero gradient strictly bg-1 -> bg-2 (like original) */
+.hero.hero--logo{
+  background:linear-gradient(90deg,var(--bg-1),var(--bg-2));
+}
+/* primary button uses the teal block color to match original CTAs */
+.btn--primary{background:var(--teal);color:#012d2a;border-color:transparent}
