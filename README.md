@@ -1,25 +1,8 @@
-# Novaris Data 🌐
+# Novaris Data — Classic Look (v1.8)
 
-**Consulting · Development · IT Solutions**
+- Navbar con **isotipo (ND) sin texto** para evitar duplicación con el hero.
+- **Hero con logo grande** sobre gradiente azul→teal (paleta del logo).
+- Sin “planes”: consulta general en **Contacto**.
+- Estructura bilingüe ES/EN y estáticos en `/assets`.
 
-Novaris Data provides tailored technology solutions in IT consulting, software development, and data management.  
-We combine expertise in backend systems, web applications, and databases to help organizations modernize processes, improve information quality, and enable data-driven decision making.  
-
-## 🔧 What We Do
-- **IT Consulting**: Analysis, planning, and implementation of technology solutions.  
-- **Software Development**: Secure, scalable backend systems and modern web applications.  
-- **Data Management**: Database design, administration, and optimization (PostgreSQL, Oracle, MySQL).  
-
-## 🚀 How We Work
-We focus on clear methodologies, measurable deliverables, and practical solutions.  
-Each project starts with understanding our client’s needs, designing viable architectures, and delivering with quality and security standards.  
-
-## 🌍 Our Approach
-Novaris Data operates 100% digitally and collaborates with both business and technology teams to deliver scalable, reliable, and growth-oriented results.  
-
----
-
-🔗 **Website:** https://www.novarisdata.com  
-📅 **Founded:** 2024  
-👥 **Team Size:** 2-10 employees  
-📍 **Sector:** IT Services & Consulting  
+**Deploy**: Cloudflare Pages, framework None, Output `/`. Dominio via `CNAME`.

@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacidad — Novaris Data</title>
-  <meta name="description" content="Política de privacidad del sitio de Novaris Data.">
+  <title>Contacto — Novaris Data</title>
+  <meta name="description" content="Agenda una llamada o envíanos tu necesidad técnica; respondemos con una propuesta clara.">
   <link rel="icon" type="image/png" href="/assets/img/favicon.png" sizes="32x32">
   <link rel="apple-touch-icon" href="/assets/img/favicon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta property="og:title" content="Privacidad — Novaris Data">
-  <meta property="og:description" content="Política de privacidad del sitio de Novaris Data.">
+  <meta property="og:title" content="Contacto — Novaris Data">
+  <meta property="og:description" content="Agenda una llamada o envíanos tu necesidad técnica; respondemos con una propuesta clara.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.novarisdata.com/">
   <meta property="og:image" content="https://www.novarisdata.com/assets/img/og-card.png">
@@ -45,9 +45,15 @@
   </header>
 
 <main id="content" class="section container">
-  <h1>Política de Privacidad</h1>
-  <p>Este sitio procesa solo lo necesario para su funcionamiento básico y, si se activa, métricas agregadas.</p>
-  <h2>Contacto</h2><p>Novaris Data — <a href="mailto:contact@novarisdata.com">contact@novarisdata.com</a></p>
+  <h1>Contacto</h1>
+  <form class="card" onsubmit="return buildMailto(event)" style="max-width:700px;margin-inline:auto">
+    <label>Nombre<input id="nombre" required style="width:100%;margin:.5rem 0"></label>
+    <label>Email<input id="email" type="email" required style="width:100%;margin:.5rem 0"></label>
+    <label>Asunto<input id="asunto" required style="width:100%;margin:.5rem 0"></label>
+    <label>Mensaje<textarea id="mensaje" rows="6" required style="width:100%;margin:.5rem 0"></textarea></label>
+    <button class="btn btn--primary" type="submit">Enviar</button>
+    <p class="small muted">Se abrirá tu cliente de correo con el contenido listo.</p>
+  </form>
 </main>
 
   <footer class="footer">
