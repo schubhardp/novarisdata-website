@@ -1,0 +1,15 @@
+{
+  "version": "0.2",
+  "language": "es",
+  "words": [
+    "Novarisdata",
+    "cSpell",
+    "web",
+    "privacidad",
+    "servicios"
+  ],
+  "ignorePaths": [
+    "node_modules/**",
+    "dist/**"
+  ]
+}
