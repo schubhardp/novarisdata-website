@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Novaris Data</title>
+  <meta name="description" content="Write to us for quotes, support or to collaborate on your next project." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/style.css" />
+  <meta property="og:title" content="Contact — Novaris Data" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="../img/og-cover.png" />
+  <meta property="og:description" content="Tell us about your project. We usually reply within 24 hours." />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="../assets/img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../assets/img/favicon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Novaris Data",
+  "url": "https://novarisdata.com/",
+  "logo": "https://novarisdata.com/assets/img/logo.png",
+  "sameAs": [
+    "https://www.linkedin.com/company/novarisdata/"
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "contactType": "sales",
+      "email": "contact@novarisdata.com",
+      "telephone": "+56 9 2962 1546",
+      "areaServed": "CL",
+      "availableLanguage": [
+        "es",
+        "en"
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="brand">
+      <a href="index.html" aria-label="Go to home">
+        <img src="../assets/img/logo.png" height="60" alt="Novaris Data" />
+      </a>
+    </div>
+    <nav class="links" aria-label="Primary">
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+      <a href="../contacto.html" lang="es">ES</a>
+    </nav>
+  </header>
+
+  <main id="content">
+    <section class="hero" aria-labelledby="t-contact">
+      <div class="container">
+        <p class="tagline">Novaris Data — Consulting · Development · IT Solutions</p>
+        <h1 id="t-contact" class="hero-title">Contact</h1>
+        <p class="hero-subtitle">Tell us about your project. We usually reply within 24 hours.</p>
+      </div>
+    </section>
+
+    <section class="section container" aria-labelledby="form-en">
+      <h2 id="form-en" class="section-title">Send us a message</h2>
+      <form class="contact-form card" action="https://formspree.io/f/myzdbndo" method="POST" autocomplete="on" novalidate>
+        <div>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required placeholder="Your name" />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="you@company.com" />
+        </div>
+        <div>
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" placeholder="Message subject" />
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required placeholder="Briefly describe your needs…"></textarea>
+        </div>
+        <input type="hidden" name="_subject" value="New contact from novarisdata.com" />
+        <input type="hidden" name="_language" value="en" />
+        <input type="hidden" name="_redirect" value="https://novarisdata.com/en/thanks.html" />
+        <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+          <button class="btn btn-primary" type="submit">Send</button>
+          <p class="tagline" style="margin:0">You can also email us at <a href="mailto:contact@novarisdata.com">contact@novarisdata.com</a> · Tel: <a href="tel:+56929621546">+56 9 2962 1546</a></p>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © 2025 Novaris Data — Consulting · Development · IT Solutions ·
+      <a href="mailto:contact@novarisdata.com">contact@novarisdata.com</a> ·
+      <a href="tel:+56929621546">+56 9 2962 1546</a> ·
+      <a href="https://www.linkedin.com/company/novarisdata/" target="_blank" rel="noopener">LinkedIn</a> ·
+      <a href="privacy.html">Privacy</a> ·
+      <a href="cookies.html">Cookies</a>
+    </div>
+  </footer>
+</body>
+</html>

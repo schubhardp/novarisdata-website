@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contacto — Novaris Data</title>
-  <meta name="description" content="Escríbenos para cotizaciones, soporte o colaborar en tu próximo proyecto." />
+  <title>Sobre nosotros — Novaris Data</title>
+  <meta name="description" content="Equipo técnico con foco de negocio. Calidad, seguridad y entrega continua." />
   
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/style.css" />
-  <meta property="og:title" content="Contacto — Novaris Data" />
+  <meta property="og:title" content="Sobre nosotros — Novaris Data" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="assets/img/og-cover.png" />
-  <meta property="og:description" content="Conversemos tu proyecto. Respondemos rápido con una propuesta clara." />
+  <meta property="og:description" content="Equipo técnico con foco de negocio. Calidad, seguridad y entrega continua." />
   <meta name="twitter:card" content="summary_large_image" />
 
   <link rel="icon" href="assets/img/favicon.png" type="image/png">
@@ -53,48 +53,43 @@
     </div>
     <nav class="links" aria-label="Principal">
       <a href="servicios.html">Servicios</a>
-      <a href="sobre-nosotros.html">Sobre nosotros</a>
-      <a href="contacto.html" aria-current="page">Contacto</a>
-      <a href="en/contact.html" lang="en">EN</a>
+      <a href="sobre-nosotros.html" aria-current="page">Sobre nosotros</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="en/about.html" lang="en">EN</a>
     </nav>
   </header>
 
   <main id="contenido">
-    <section class="hero" aria-labelledby="t-contacto">
+    <section class="hero" aria-labelledby="titulo">
       <div class="container">
         <p class="tagline">Novaris Data — Consulting · Development · IT Solutions</p>
-        <h1 id="t-contacto" class="hero-title">Contacto</h1>
-        <p class="hero-subtitle">Cuéntanos tu proyecto. Te respondemos en menos de 24 horas.</p>
+        <h1 id="titulo" class="hero-title">Sobre nosotros</h1>
+        <p class="hero-subtitle">Cercanía, compromiso y resultados medibles.</p>
       </div>
     </section>
 
-    <section class="section container" aria-labelledby="formulario">
-      <h2 id="formulario" class="section-title">Envíanos un mensaje</h2>
-      <form class="contact-form card" action="https://formspree.io/f/myzdbndo" method="POST" autocomplete="on" novalidate>
+    <section class="section container" aria-labelledby="enfoque">
+      <h2 id="enfoque" class="section-title">Nuestro enfoque</h2>
+      <div class="grid-3">
+        <article class="card"><h3>Innovación con propósito</h3><p>Elegimos tecnología por su impacto real en el negocio.</p></article>
+        <article class="card"><h3>Transparencia</h3><p>Estimaciones claras, riesgos y trade-offs explícitos.</p></article>
+        <article class="card"><h3>Excelencia técnica</h3><p>Automatización, pruebas y seguridad desde el inicio.</p></article>
+      </div>
+    </section>
+
+    <section class="section container" aria-labelledby="stack">
+      <h2 id="stack" class="section-title">Tecnologías y estándares</h2>
+      <p class="tagline">Python · Django · FastAPI · React · Node.js · PostgreSQL · Oracle · MySQL · AWS · Azure · Docker · CI/CD · OWASP</p>
+    </section>
+
+    <section class="section container" aria-labelledby="cta2">
+      <div class="card" style="display:flex;align-items:center;justify-content:space-between;gap:16px;">
         <div>
-          <label for="nombre">Nombre</label>
-          <input id="nombre" name="nombre" type="text" required placeholder="Tu nombre" />
+          <h2 id="cta2" class="section-title" style="margin:0;">¿Hablamos?</h2>
+          <p style="margin:6px 0 0;">Cuéntanos tu iniciativa y te proponemos el mejor camino.</p>
         </div>
-        <div>
-          <label for="email">Correo electrónico</label>
-          <input id="email" name="email" type="email" required placeholder="tu@empresa.com" />
-        </div>
-        <div>
-          <label for="asunto">Asunto</label>
-          <input id="asunto" name="asunto" type="text" placeholder="Tema del mensaje" />
-        </div>
-        <div>
-          <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje" name="mensaje" rows="6" required placeholder="Cuéntanos brevemente tu necesidad…"></textarea>
-        </div>
-        <input type="hidden" name="_subject" value="Nuevo contacto desde novarisdata.com" />
-        <input type="hidden" name="_language" value="es" />
-        <input type="hidden" name="_redirect" value="https://novarisdata.com/gracias.html" />
-        <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
-          <button class="btn btn-primary" type="submit">Enviar</button>
-          <p class="tagline" style="margin:0">También por correo: <a href="mailto:contact@novarisdata.com">contact@novarisdata.com</a> · Tel: <a href="tel:+56929621546">+56 9 2962 1546</a></p>
-        </div>
-      </form>
+        <a class="btn btn-primary" href="contacto.html">Contactar</a>
+      </div>
     </section>
   </main>
 

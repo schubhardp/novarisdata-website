@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.novarisdata.com/sitemap.xml
+
+Sitemap: https://novarisdata.com/sitemap.xml

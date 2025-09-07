@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <!-- Fondo (no visible cuando lo usas como background con capas, lo dejo por si abres el SVG solo) -->
+  <rect width="1920" height="1080" fill="#0a1f29"/>
+
+  <defs>
+    <!-- Brillo suave para los nodos -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Estilo de línea animada: patrón corto para simular flujo -->
+    <style>
+      .net-line {
+        stroke: #18c29c;
+        stroke-opacity: 0.35;
+        stroke-width: 1.2;
+        stroke-dasharray: 7 10;
+        animation: flow 12s linear infinite;
+      }
+      .node {
+        fill: #18c29c;
+        filter: url(#glow);
+        opacity: .9;
+        animation: pulse 4.5s ease-in-out infinite;
+      }
+      @keyframes flow { 
+        to { stroke-dashoffset: -140; } 
+      }
+      @keyframes pulse {
+        0%, 100% { r: 3; opacity: .85; }
+        50%      { r: 3.9; opacity: 1; }
+      }
+      /* Ligera variación entre nodos para que no pulsen todos iguales */
+      .n2 { animation-delay: .4s; }
+      .n3 { animation-delay: .8s; }
+      .n4 { animation-delay: 1.2s; }
+      .n5 { animation-delay: 1.6s; }
+      .n6 { animation-delay: 2.0s; }
+      .n7 { animation-delay: 2.4s; }
+      .n8 { animation-delay: 2.8s; }
+      .n9 { animation-delay: 3.2s; }
+      .n10 { animation-delay: 3.6s; }
+      .n11 { animation-delay: 4.0s; }
+      .n12 { animation-delay: 4.4s; }
+      .n13 { animation-delay: 4.8s; }
+      .n14 { animation-delay: 5.2s; }
+      .n15 { animation-delay: 5.6s; }
+      .n16 { animation-delay: 6.0s; }
+      .n17 { animation-delay: 6.4s; }
+      .n18 { animation-delay: 6.8s; }
+      .n19 { animation-delay: 7.2s; }
+      .n20 { animation-delay: 7.6s; }
+    </style>
+  </defs>
+
+  <!-- Capa 1 (fondo): misma red, más tenue y con drift leve -->
+  <g opacity="0.45">
+    <g transform="translate(0,0)">
+      <animateTransform attributeName="transform" type="translate"
+        values="0,0; -8,-5; 0,0; 6,4; 0,0" dur="48s" repeatCount="indefinite"/>
+      <!-- LÍNEAS -->
+      <g class="net-line">
+        <line x1="150" y1="200" x2="400" y2="150"/>
+        <line x1="400" y1="150" x2="700" y2="250"/>
+        <line x1="700" y1="250" x2="1000" y2="180"/>
+        <line x1="1000" y1="180" x2="1300" y2="300"/>
+        <line x1="1300" y1="300" x2="1600" y2="200"/>
+        <line x1="1600" y1="200" x2="1800" y2="400"/>
+        <line x1="300" y1="500" x2="600" y2="600"/>
+        <line x1="600" y1="600" x2="900" y2="500"/>
+        <line x1="900" y1="500" x2="1200" y2="650"/>
+        <line x1="1200" y1="650" x2="1500" y2="600"/>
+        <line x1="1500" y1="600" x2="1700" y2="800"/>
+        <line x1="400" y1="900" x2="800" y2="850"/>
+        <line x1="800" y1="850" x2="1100" y2="950"/>
+        <line x1="1100" y1="950" x2="1400" y2="900"/>
+        <line x1="600" y1="300" x2="300" y2="500"/>
+        <line x1="600" y1="600" x2="1000" y2="750"/>
+        <line x1="300" y1="700" x2="600" y2="600"/>
+      </g>
+      <!-- NODOS -->
+      <g>
+        <circle class="node n1"  cx="150"  cy="200" r="3"/>
+        <circle class="node n2"  cx="400"  cy="150" r="3"/>
+        <circle class="node n3"  cx="700"  cy="250" r="3"/>
+        <circle class="node n4"  cx="1000" cy="180" r="3"/>
+        <circle class="node n5"  cx="1300" cy="300" r="3"/>
+        <circle class="node n6"  cx="1600" cy="200" r="3"/>
+        <circle class="node n7"  cx="1800" cy="400" r="3"/>
+        <circle class="node n8"  cx="300"  cy="500" r="3"/>
+        <circle class="node n9"  cx="600"  cy="600" r="3"/>
+        <circle class="node n10" cx="900"  cy="500" r="3"/>
+        <circle class="node n11" cx="1200" cy="650" r="3"/>
+        <circle class="node n12" cx="1500" cy="600" r="3"/>
+        <circle class="node n13" cx="1700" cy="800" r="3"/>
+        <circle class="node n14" cx="400"  cy="900" r="3"/>
+        <circle class="node n15" cx="800"  cy="850" r="3"/>
+        <circle class="node n16" cx="1100" cy="950" r="3"/>
+        <circle class="node n17" cx="1400" cy="900" r="3"/>
+        <circle class="node n18" cx="600"  cy="300" r="3"/>
+        <circle class="node n19" cx="1000" cy="750" r="3"/>
+        <circle class="node n20" cx="300"  cy="700" r="3"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Capa 2 (delante): misma red, un poco más marcada y con drift distinto para parallax -->
+  <g opacity="0.8">
+    <g transform="translate(0,0)">
+      <animateTransform attributeName="transform" type="translate"
+        values="0,0; 6,4; 0,0; -5,-3; 0,0" dur="52s" repeatCount="indefinite"/>
+      <g class="net-line">
+        <line x1="150" y1="200" x2="400" y2="150"/>
+        <line x1="400" y1="150" x2="700" y2="250"/>
+        <line x1="700" y1="250" x2="1000" y2="180"/>
+        <line x1="1000" y1="180" x2="1300" y2="300"/>
+        <line x1="1300" y1="300" x2="1600" y2="200"/>
+        <line x1="1600" y1="200" x2="1800" y2="400"/>
+        <line x1="300" y1="500" x2="600" y2="600"/>
+        <line x1="600" y1="600" x2="900" y2="500"/>
+        <line x1="900" y1="500" x2="1200" y2="650"/>
+        <line x1="1200" y1="650" x2="1500" y2="600"/>
+        <line x1="1500" y1="600" x2="1700" y2="800"/>
+        <line x1="400" y1="900" x2="800" y2="850"/>
+        <line x1="800" y1="850" x2="1100" y2="950"/>
+        <line x1="1100" y1="950" x2="1400" y2="900"/>
+        <line x1="600" y1="300" x2="300" y2="500"/>
+        <line x1="600" y1="600" x2="1000" y2="750"/>
+        <line x1="300" y1="700" x2="600" y2="600"/>
+      </g>
+      <g>
+        <circle class="node n1"  cx="150"  cy="200" r="3"/>
+        <circle class="node n2"  cx="400"  cy="150" r="3"/>
+        <circle class="node n3"  cx="700"  cy="250" r="3"/>
+        <circle class="node n4"  cx="1000" cy="180" r="3"/>
+        <circle class="node n5"  cx="1300" cy="300" r="3"/>
+        <circle class="node n6"  cx="1600" cy="200" r="3"/>
+        <circle class="node n7"  cx="1800" cy="400" r="3"/>
+        <circle class="node n8"  cx="300"  cy="500" r="3"/>
+        <circle class="node n9"  cx="600"  cy="600" r="3"/>
+        <circle class="node n10" cx="900"  cy="500" r="3"/>
+        <circle class="node n11" cx="1200" cy="650" r="3"/>
+        <circle class="node n12" cx="1500" cy="600" r="3"/>
+        <circle class="node n13" cx="1700" cy="800" r="3"/>
+        <circle class="node n14" cx="400"  cy="900" r="3"/>
+        <circle class="node n15" cx="800"  cy="850" r="3"/>
+        <circle class="node n16" cx="1100" cy="950" r="3"/>
+        <circle class="node n17" cx="1400" cy="900" r="3"/>
+        <circle class="node n18" cx="600"  cy="300" r="3"/>
+        <circle class="node n19" cx="1000" cy="750" r="3"/>
+        <circle class="node n20" cx="300"  cy="700" r="3"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Respeto a usuarios que prefieren reducir movimiento -->
+  <style>
+    @media (prefers-reduced-motion: reduce) {
+      .net-line, .node { animation: none !important; }
+    }
+  </style>
+</svg>

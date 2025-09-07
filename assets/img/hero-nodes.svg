@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Red de nodos Novaris Data animada">
+  <defs>
+    <!-- Degradado para líneas -->
+    <linearGradient id="ng-line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"  stop-color="#18c29c"/>
+      <stop offset="100%" stop-color="#10b191"/>
+    </linearGradient>
+
+    <!-- Glow para nodos -->
+    <radialGradient id="ng-dot" cx="50%" cy="50%" r="1">
+      <stop offset="0%"   stop-color="#18c29c" stop-opacity="1"/>
+      <stop offset="55%"  stop-color="#18c29c" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#18c29c" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="ng-soft" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.2" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      /* Accesibilidad: desactivar animación si el usuario lo pide */
+      @media (prefers-reduced-motion: reduce) {
+        .a-dash, .a-pulse, .a-float { animation: none !important; }
+      }
+
+      .a-float { animation: ng-float 16s ease-in-out infinite; }
+      .a-dash  { animation: ng-dash 8s linear infinite; }
+      .a-pulse { animation: ng-pulse 3.2s ease-in-out infinite; }
+
+      @keyframes ng-float {
+        0%,100% { transform: translateY(0px); }
+        50%     { transform: translateY(8px); }
+      }
+      @keyframes ng-dash {
+        to { stroke-dashoffset: -260; }
+      }
+      @keyframes ng-pulse {
+        0%,100% { transform: scale(1);   opacity:.95; }
+        50%     { transform: scale(.92); opacity:.55; }
+      }
+    </style>
+  </defs>
+
+  <!-- Grupo completo: leve flotado -->
+  <g class="a-float">
+    <!-- CAPA 1: líneas “glow” de fondo (más gruesas y transparentes) -->
+    <g stroke="#18c29c" stroke-opacity="0.22" stroke-width="4" stroke-linecap="round" fill="none" filter="url(#ng-soft)">
+      <line x1="200"  y1="150" x2="600"  y2="300"/>
+      <line x1="600"  y1="300" x2="1100" y2="200"/>
+      <line x1="1100" y1="200" x2="1600" y2="400"/>
+      <line x1="600"  y1="300" x2="400"  y2="700"/>
+      <line x1="400"  y1="700" x2="900"  y2="900"/>
+      <line x1="900"  y1="900" x2="1500" y2="750"/>
+      <line x1="1500" y1="750" x2="1600" y2="400"/>
+      <line x1="1100" y1="200" x2="900"  y2="900"/>
+    </g>
+
+    <!-- CAPA 2: líneas principales con degradado y brillo que recorre -->
+    <g stroke="url(#ng-line)" stroke-opacity="0.9" stroke-width="2.2" stroke-linecap="round" fill="none" filter="url(#ng-soft)">
+      <!-- dashed + dashoffset animado -->
+      <g stroke-dasharray="14 10" class="a-dash">
+        <line x1="200"  y1="150" x2="600"  y2="300"/>
+        <line x1="600"  y1="300" x2="1100" y2="200"/>
+        <line x1="1100" y1="200" x2="1600" y2="400"/>
+        <line x1="600"  y1="300" x2="400"  y2="700"/>
+        <line x1="400"  y1="700" x2="900"  y2="900"/>
+        <line x1="900"  y1="900" x2="1500" y2="750"/>
+        <line x1="1500" y1="750" x2="1600" y2="400"/>
+        <line x1="1100" y1="200" x2="900"  y2="900"/>
+      </g>
+    </g>
+
+    <!-- NODOS: núcleo + halo (con delays escalonados para efecto vivo) -->
+    <g>
+      <!-- helper: función para un nodo -->
+      <!-- NODO 1 -->
+      <circle cx="200" cy="150" r="5.2" fill="url(#ng-dot)" class="a-pulse" style="animation-delay:.0s"/>
+      <circle cx="200" cy="150" r="2.6" fill="#18c29c" />
+      <!-- NODO 2 -->
+      <circle cx="600" cy="300" r="5.2" fill="url(#ng-dot)" class="a-pulse" style="animation-delay:.15s"/>
+      <circle cx="600" cy="300" r="2.6" fill="#18c29c" />
+      <!-- NODO 3 -->
+      <circle cx="1100" cy="200" r="5.2" fill="url(#ng-dot)" class="a-pulse" style="animation-delay:.30s"/>
+      <circle cx="1100" cy="200" r="2.6" fill="#18c29c" />
+      <!-- NODO 4 -->
+      <circle cx="1600" cy="400" r="5.2" fill="url(#ng-dot)" class="a-pulse" style="animation-delay:.45s"/>
+      <circle cx="1600" cy="400" r="2.6" fill="#18c29c" />
+      <!-- NODO 5 -->
+      <circle cx="400" cy="700" r="5.2" fill="url(#ng-dot)" class="a-pulse" style="animation-delay:.60s"/>
+      <circle cx="400" cy="700" r="2.6" fill="#18c29c" />
+      <!-- NODO 6 -->
+      <circle cx="900" cy="900" r="5.2" fill="url(#ng-dot)" class="a-pulse" style="animation-delay:.75s"/>
+      <circle cx="900" cy="900" r="2.6" fill="#18c29c" />
+      <!-- NODO 7 -->
+      <circle cx="1500" cy="750" r="5.2" fill="url(#ng-dot)" class="a-pulse" style="animation-delay:.90s"/>
+      <circle cx="1500" cy="750" r="2.6" fill="#18c29c" />
+    </g>
+  </g>
+</svg>

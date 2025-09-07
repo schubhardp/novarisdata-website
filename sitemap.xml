@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.novarisdata.com/</loc></url>
-  <url><loc>https://www.novarisdata.com/servicios.html</loc></url>
-  <url><loc>https://www.novarisdata.com/sobre.html</loc></url>
-  <url><loc>https://www.novarisdata.com/contacto.html</loc></url>
-  <url><loc>https://www.novarisdata.com/privacy.html</loc></url>
-  <url><loc>https://www.novarisdata.com/cookies.html</loc></url>
-  <url><loc>https://www.novarisdata.com/en/</loc></url>
-  <url><loc>https://www.novarisdata.com/en/services.html</loc></url>
-  <url><loc>https://www.novarisdata.com/en/about.html</loc></url>
-  <url><loc>https://www.novarisdata.com/en/contact.html</loc></url>
-  <url><loc>https://www.novarisdata.com/en/privacy.html</loc></url>
-  <url><loc>https://www.novarisdata.com/en/cookies.html</loc></url>
+  <url><loc>https://novarisdata.com/</loc></url>
+  <url><loc>https://novarisdata.com/servicios.html</loc></url>
+  <url><loc>https://novarisdata.com/sobre-nosotros.html</loc></url>
+  <url><loc>https://novarisdata.com/contacto.html</loc></url>
+  <url><loc>https://novarisdata.com/gracias.html</loc></url>
+  <url><loc>https://novarisdata.com/privacidad.html</loc></url>
+  <url><loc>https://novarisdata.com/cookies.html</loc></url>
+
+  <url><loc>https://novarisdata.com/en/</loc></url>
+  <url><loc>https://novarisdata.com/en/services.html</loc></url>
+  <url><loc>https://novarisdata.com/en/about.html</loc></url>
+  <url><loc>https://novarisdata.com/en/contact.html</loc></url>
+  <url><loc>https://novarisdata.com/en/thanks.html</loc></url>
+  <url><loc>https://novarisdata.com/en/privacy.html</loc></url>
+  <url><loc>https://novarisdata.com/en/cookies.html</loc></url>
 </urlset>
