@@ -401,3 +401,29 @@ select:focus-visible {
     padding: 56px 0;
   }
 }
+
+/* iOS/Android: no dibujar contorno de focus-within en cards */
+@media (hover: none) and (pointer: coarse) {
+  .card:focus-within {
+    outline: none;
+    outline-offset: 0;
+  }
+
+  /* y suaviza el focus solo en los botones/links */
+  .btn:focus,
+  .btn:focus-visible,
+  a:focus,
+  a:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(24, 194, 156, .25);
+    border-radius: 10px;
+  }
+}
+
+/* Por si el bloque CTA es una .card, anula siempre el borde ahí */
+.cta,
+.cta.card,
+.cta-panel {
+  outline: none !important;
+  outline-offset: 0 !important;
+}
