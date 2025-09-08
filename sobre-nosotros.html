@@ -60,12 +60,20 @@
         <img src="assets/img/logo.png" height="60" alt="Novaris Data" />
       </a>
     </div>
-    <nav class="links" aria-label="Principal">
-      <a href="servicios.html">Servicios</a>
+    <nav class="links" aria-label="Principal"><a href="servicios.html">Servicios</a>
       <a href="sobre-nosotros.html" aria-current="page">Sobre nosotros</a>
       <a href="contacto.html">Contacto</a>
       <a href="en/about.html" lang="en">EN</a>
-    </nav>
+      <div class="lang-dropdown">
+        <button class="lang-btn" aria-haspopup="true" aria-expanded="false">
+          <span aria-hidden="true">🌐</span> Idioma ▾
+        </button>
+        <div class="lang-menu" role="menu" aria-label="Cambiar idioma">
+          <a href="index.html" lang="es" role="menuitem">Español</a>
+          <a href="en/index.html" lang="en" role="menuitem">English</a>
+        </div>
+      </div>
+</nav>
   </header>
 
   <main id="contenido">
@@ -133,5 +141,6 @@
       <a href="cookies.html">Cookies</a>
     </div>
   </footer>
+  <script src="assets/main.js" defer></script>
 </body>
 </html>
