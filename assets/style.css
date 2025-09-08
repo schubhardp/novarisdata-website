@@ -438,10 +438,60 @@ select:focus-visible {
   }
 }
 
-/* Por si el bloque CTA es .card, nunca dibujar borde */
 .cta,
 .cta.card,
 .cta-panel {
   outline: none !important;
   outline-offset: 0 !important;
+}
+
+.cta .hero-buttons,
+.cta-panel .hero-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.cta .hero-buttons .btn,
+.cta-panel .hero-buttons .btn {
+  flex: 1 1 220px;
+}
+
+.cta,
+.cta-panel {
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.cta.card,
+.cta-panel.card {
+  border: 1px solid rgba(24, 194, 156, .35);
+  outline: none !important;
+  outline-offset: 0 !important;
+}
+
+@media (max-width: 640px) {
+
+  .cta .hero-buttons .btn,
+  .cta-panel .hero-buttons .btn {
+    flex: 1 1 100%;
+  }
+}
+
+/* Evita que el mix-blend del hero afecte a elementos ajenos (navbar, etc.) */
+.hero {
+  isolation: isolate;
+}
+
+/* Quita el destello azul de tap en iOS/Android */
+a,
+.btn {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Un pelín más de respiro bajo el navbar en pantallas pequeñas */
+@media (max-width:640px) {
+  .navbar {
+    border-bottom-color: rgba(255, 255, 255, .06);
+  }
 }
