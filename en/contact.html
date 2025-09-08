@@ -12,37 +12,37 @@
   <link rel="stylesheet" href="../assets/style.css" />
   <meta property="og:title" content="Contact — Novaris Data" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="../img/og-cover.png" />
+  <meta property="og:image" content="../assets/img/og-cover.png" />
   <meta property="og:description" content="Tell us about your project. We usually reply within 24 hours." />
   <meta name="twitter:card" content="summary_large_image" />
 
   <link rel="icon" href="../assets/img/favicon.png" type="image/png">
-<link rel="apple-touch-icon" href="../assets/img/favicon.png">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Novaris Data",
-  "url": "https://novarisdata.com/",
-  "logo": "https://novarisdata.com/assets/img/logo.png",
-  "sameAs": [
-    "https://www.linkedin.com/company/novarisdata/"
-  ],
-  "contactPoint": [
-    {
-      "@type": "ContactPoint",
-      "contactType": "sales",
-      "email": "contact@novarisdata.com",
-      "telephone": "+56 9 2962 1546",
-      "areaServed": "CL",
-      "availableLanguage": [
-        "es",
-        "en"
-      ]
-    }
-  ]
-}
-</script>
+  <link rel="apple-touch-icon" href="../assets/img/favicon.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Novaris Data",
+    "url": "https://novarisdata.com/",
+    "logo": "https://novarisdata.com/assets/img/logo.png",
+    "sameAs": [
+      "https://www.linkedin.com/company/novarisdata/"
+    ],
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "email": "contact@novarisdata.com",
+        "telephone": "+56 9 2962 1546",
+        "areaServed": "CL",
+        "availableLanguage": [
+          "es",
+          "en"
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header class="navbar">
@@ -89,10 +89,12 @@
         </div>
         <input type="hidden" name="_subject" value="New contact from novarisdata.com" />
         <input type="hidden" name="_language" value="en" />
-        <input type="hidden" name="_redirect" value="https://novarisdata.com/en/thanks.html" />
         <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
           <button class="btn btn-primary" type="submit">Send</button>
-          <p class="tagline" style="margin:0">You can also email us at <a href="mailto:contact@novarisdata.com">contact@novarisdata.com</a> · Tel: <a href="tel:+56929621546">+56 9 2962 1546</a></p>
+          <p class="tagline" style="margin:0">
+            You can also email us at <a href="mailto:contact@novarisdata.com">contact@novarisdata.com</a> · Tel:
+            <a href="tel:+56929621546">+56 9 2962 1546</a>
+          </p>
         </div>
       </form>
     </section>
@@ -108,5 +110,32 @@
       <a href="cookies.html">Cookies</a>
     </div>
   </footer>
+
+  <!-- Script AJAX -->
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('form[action*="formspree.io"]');
+    if (!form) return;
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      const data = new FormData(form);
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          window.location.href = '/en/thanks.html';
+        } else {
+          alert('We couldn’t send your message. Please try again.');
+        }
+      } catch (err) {
+        alert('There was a network issue. Please try again.');
+      }
+    });
+  });
+  </script>
 </body>
 </html>
