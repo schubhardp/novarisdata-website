@@ -1,3 +1,4 @@
+// assets/main.js
 (function () {
   const STORAGE_KEY = 'nd_cookie_choice';
 
@@ -10,6 +11,7 @@
     const banner = document.querySelector('.cookie-banner');
     if (!banner) return;
 
+    // Evita re-mostrar si ya hay elección
     try {
       const saved = localStorage.getItem(STORAGE_KEY);
       if (saved) return;
@@ -30,28 +32,38 @@
   });
 })();
 
-// === Language dropdown: click-only ===
-(function () {
-  function setup(dd) {
-    if (!dd) return;
-    const btn = dd.querySelector('.lang-btn');
-    const menu = dd.querySelector('.lang-menu');
-    if (!btn || !menu) return;
-    const setOpen = (v) => {
-      dd.classList.toggle('open', v);
-      btn.setAttribute('aria-expanded', String(v));
-    };
-    btn.addEventListener('click', (e) => {
+
+// === Language dropdown: click-only (pill) ===
+(function(){
+  function setup(dd){
+    if(!dd) return;
+    var btn = dd.querySelector('.lang-toggle');
+    var menu = dd.querySelector('.lang-menu');
+    if(!btn || !menu) return;
+
+    function setOpen(v){
+      if(v){ dd.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
+      else { dd.classList.remove('open'); btn.setAttribute('aria-expanded','false'); }
+    }
+
+    btn.addEventListener('click', function(e){
       e.preventDefault();
-      const isOpen = dd.classList.contains('open');
-      setOpen(!isOpen);
+      setOpen(!dd.classList.contains('open'));
     });
-    document.addEventListener('click', (e) => {
-      if (!dd.contains(e.target)) setOpen(false);
+
+    document.addEventListener('click', function(e){
+      if(!dd.contains(e.target)) setOpen(false);
     });
-    dd.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') { setOpen(false); btn.focus(); }
+
+    dd.addEventListener('keydown', function(e){
+      if(e.key === 'Escape'){ setOpen(false); btn.focus(); }
     });
   }
-  document.querySelectorAll('.lang-dropdown').forEach(setup);
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function(){ 
+      document.querySelectorAll('.lang').forEach(setup);
+    });
+  } else {
+    document.querySelectorAll('.lang').forEach(setup);
+  }
 })();
