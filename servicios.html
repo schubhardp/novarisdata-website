@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="utf-8" />
@@ -48,7 +48,7 @@
   <header class="navbar">
     <div class="brand">
       <a href="index.html" aria-label="Ir al inicio">
-        <img src="assets/img/logo.png" height="60" alt="Novaris Data" />
+        <img src="assets/img/logo.png" alt="Novaris Data" />
       </a>
     </div>
     <nav class="links" aria-label="Principal">
@@ -96,13 +96,14 @@
       <p class="tagline">Finanzas & Seguros · Salud · Retail & E-commerce · Turismo · Servicios Profesionales</p>
     </section>
 
+    <!-- CTA corregido para móvil: usa clases .cta y .hero-buttons (wrap) -->
     <section class="section container" aria-labelledby="cta-serv">
-      <div class="card" style="display:flex;align-items:center;justify-content:space-between;gap:16px;">
+      <div class="card cta">
         <div>
           <h2 id="cta-serv" class="section-title" style="margin:0;">¿Listo para conversar?</h2>
           <p style="margin:6px 0 0;">Cuéntanos tu caso y te enviaremos una propuesta en 24 horas.</p>
         </div>
-        <div style="display:flex;gap:10px;">
+        <div class="hero-buttons">
           <a class="btn btn-primary" href="contacto.html">Contactar ahora</a>
           <a class="btn btn-outline" href="sobre-nosotros.html">Conócenos</a>
         </div>
@@ -122,3 +123,4 @@
   </footer>
 </body>
 </html>
+
