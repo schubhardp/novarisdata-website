@@ -495,27 +495,3 @@ a,
     border-bottom-color: rgba(255, 255, 255, .06);
   }
 }
-
-.lang-switch {
-  margin-left: 12px;
-  /* separación con el último link */
-  font-weight: 600;
-  /* opcional, para destacar */
-}
-
-.lang-switch a {
-  text-decoration: none;
-}
-
-/* --- HARDEN: Language pill y menú (evita overrides antiguos) --- */
-.navbar .links { display:flex; align-items:center; gap:20px; flex-wrap:nowrap; white-space:nowrap; }
-.lang { position:relative; margin-left:12px; }
-.lang-toggle{ appearance:none!important; -webkit-appearance:none!important; -moz-appearance:none!important;
-  background: var(--bg-850)!important; border:1px solid var(--bg-700)!important; border-radius:9999px!important;
-  color:var(--text-100)!important; display:inline-flex!important; align-items:center!important; gap:8px!important;
-  padding:8px 12px!important; font:inherit!important; font-weight:600!important; line-height:1!important;
-  cursor:pointer!important; box-shadow:var(--shadow)!important; }
-.lang-menu{ display:none!important; position:absolute; right:0; top:calc(100% + 10px);
-  min-width:180px; background:var(--bg-850); border:1px solid var(--bg-700); border-radius:10px; 
-  box-shadow:var(--shadow); padding:8px; z-index:1000; }
-.lang.open .lang-menu{ display:block!important; }
