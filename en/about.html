@@ -151,6 +151,163 @@
       © 2025 Novaris Data —
       <a href="mailto:contact@novarisdata.com">contact@novarisdata.com</a> ·
       <a href="tel:+56929621546">+56 9 2962 1546</a> ·
+      
+    param($m)
+    $q = $m.Groups[1].Value
+    $v = $m.Groups[2].Value
+    $t = ($v -split '\s+') | Where-Object { <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Novaris Data</title>
+  <meta name="description" content="Technical team with a business mindset. Quality, security and continuous delivery." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/style.css" />
+
+  <meta property="og:title" content="About — Novaris Data" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="../assets/img/og-cover.png" />
+  <meta property="og:description" content="Technical team with a business mindset. Quality, security and continuous delivery." />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="../assets/img/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/img/favicon.png">
+
+  <!-- Minimal styles for the tech logos grid (keeps your main CSS intact) -->
+  <style>
+    .logo-wrap { max-width: 980px; margin: 20px auto 0; }
+    .logo-grid{
+      display:grid;
+      grid-template-columns:repeat(6,1fr);
+      gap:24px;
+      justify-items:center;
+      align-items:center;
+    }
+    .logo-grid img{
+      height:40px;
+      width:auto;
+      transition:transform .2s ease, opacity .2s ease;
+      opacity:.95;
+      filter:saturate(.95);
+    }
+    .logo-grid img:hover{ transform:translateY(-2px); opacity:1; filter:saturate(1); }
+    /* Wordmarks benefit from a slightly larger height for balance */
+    .logo-grid img[data-wordmark="true"]{ height:46px; }
+
+    @media (max-width:980px){ .logo-grid{ grid-template-columns:repeat(4,1fr);} }
+    @media (max-width:640px){
+      .logo-grid{ grid-template-columns:repeat(3,1fr); }
+      .logo-grid img{ height:34px; }
+      .logo-grid img[data-wordmark="true"]{ height:40px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="brand">
+      <a href="index.html" aria-label="Go to home">
+        <img src="../assets/img/logo.png" alt="Novaris Data" />
+      </a>
+    </div>
+    <nav class="links" aria-label="Primary">
+      <a href="services.html">Services</a>
+      <a href="about.html" aria-current="page">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="../sobre-nosotros.html" lang="es">ES</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="t-about">
+      <div class="container">
+        <p class="tagline">Novaris Data — Consulting · Development · IT Solutions</p>
+        <h1 id="t-about" class="hero-title">About us</h1>
+        <p class="hero-subtitle">Proximity, commitment and measurable results.</p>
+      </div>
+    </section>
+
+    
+    <section class="section container" aria-labelledby="who">
+  <h2 id="who" class="section-title">Who we are</h2>
+  <div class="about-intro grid-2">
+    <div class="about-copy">
+      <p class="meta-badge">Founded in 2023</p>
+      <p><strong>Novaris Data</strong>, based in <strong>Santiago, Chile</strong>, helps companies turn needs into measurable technology outcomes. We work closely with clients, using short iterative cycles and clear quality criteria.</p>
+      <ul>
+        <li><strong>Consulting:</strong> discovery workshops, scope definition, and executable roadmaps.</li>
+        <li><strong>Development:</strong> robust web apps and APIs (Python/FastAPI, Django, React) with CI/CD and testing.</li>
+        <li><strong>Data & SQL:</strong> modeling, ETL, and database administration (PostgreSQL, Oracle) focused on performance and security.</li>
+      </ul>
+      <p>We value <strong>transparency</strong> and <strong>results</strong>: KPIs, delivery timelines, and clear documentation so the value is evident.</p>
+    </div>
+    <figure class="about-media">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Skyline_of_Santiago%2C_Chile.jpg?width=1200" alt="Skyline of Santiago, Chile with the Andes mountains" width="1200" height="800" loading="lazy" decoding="async" sizes="(max-width: 768px) 100vw, 40vw">
+      <figcaption>Based in Santiago, Chile</figcaption>
+    </figure>
+  </div>
+</section>
+<section class="section container" aria-labelledby="approach">
+      <h2 id="approach" class="section-title">Our approach</h2>
+      <div class="grid-3">
+        <article class="card"><h3>Purpose-driven innovation</h3><p>We choose technology for its business impact.</p></article>
+        <article class="card"><h3>Transparency</h3><p>Clear estimates, risks and explicit trade-offs.</p></article>
+        <article class="card"><h3>Technical excellence</h3><p>Automation, testing and security from day one.</p></article>
+      </div>
+    </section>
+
+    <section class="section container" aria-labelledby="stack">
+      <h2 id="stack" class="section-title">Technologies & standards</h2>
+      <p class="tagline">Modern stack for backend, frontend, data, cloud and DevOps.</p>
+
+      <div class="logo-wrap">
+        <div class="logo-grid" aria-label="Technology logos">
+          <!-- Backend & Frontend -->
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python" loading="lazy" />
+          <img src="../assets/img/django-white.svg" alt="Django" title="Django" loading="lazy" data-wordmark="true" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI" title="FastAPI" loading="lazy" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" title="Node.js" loading="lazy" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" title="React" loading="lazy" />
+          <!-- Databases -->
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" title="PostgreSQL" loading="lazy" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle" title="Oracle" loading="lazy" data-wordmark="true" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" title="MySQL" loading="lazy" />
+          <!-- Cloud -->
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" title="AWS" loading="lazy" data-wordmark="true" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure" title="Azure" loading="lazy" />
+          <!-- DevOps -->
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" title="Docker" loading="lazy" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="GitLab CI/CD" title="GitLab CI/CD" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" aria-labelledby="cta">
+      <div class="card" style="display:flex;justify-content:space-between;align-items:center;gap:16px;">
+        <div>
+          <h2 id="cta" class="section-title" style="margin:0;">Let's talk</h2>
+          <p style="margin:6px 0 0;">Tell us about your initiative and we’ll propose the best path forward.</p>
+        </div>
+        <a class="btn btn-primary" href="contact.html">Contact</a>
+      </div>
+    </section>
+<section class="section container portfolio-note" aria-labelledby="portfolio-note-en">
+  <p class="muted" id="portfolio-note-en" style="text-align:center;">
+    Portfolio and references available privately. 
+    <a href="contact.html">Contact us to arrange</a>.
+  </p>
+</section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © 2025 Novaris Data —
+      <a href="mailto:contact@novarisdata.com">contact@novarisdata.com</a> ·
+      <a href="tel:+56929621546">+56 9 2962 1546</a> ·
       <a href="https://www.linkedin.com/company/novarisdata/" target="_blank" rel="noopener">LinkedIn</a> ·
       <a href="privacy.html">Privacy</a> ·
       <a href="cookies.html">Cookies</a>
@@ -159,4 +316,18 @@
 </footer>
 </body>
 </html>
+
+ } | Select-Object -Unique
+    if ($t -notcontains 'noopener')   { $t += 'noopener' }
+    if ($t -notcontains 'noreferrer') { $t += 'noreferrer' }
+    ($m.Value -replace 'rel=(["''])([^"'']*)\1', 'rel=' + $q + ($t -join ' ') + $q)
+  >LinkedIn</a> ·
+      <a href="privacy.html">Privacy</a> ·
+      <a href="cookies.html">Cookies</a>
+    </div>
+    <p>Santiago, Chile</p>
+</footer>
+</body>
+</html>
+
 

@@ -65,10 +65,93 @@
       © 2025 Novaris Data · 
       <a href="mailto:contact@novarisdata.com">contact@novarisdata.com</a> · 
       <a href="tel:+56929621546">+56 9 2962 1546</a> ·
+      
+    param($m)
+    $q = $m.Groups[1].Value
+    $v = $m.Groups[2].Value
+    $t = ($v -split '\s+') | Where-Object { <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank you — Novaris Data</title>
+  <meta name="description" content="Thank you for contacting Novaris Data." />
+  <meta name="robots" content="noindex, nofollow" />
+  
+  <link rel="stylesheet" href="../assets/style.css" />
+
+  <link rel="icon" href="../assets/img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../assets/img/favicon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Novaris Data",
+  "url": "https://novarisdata.com/",
+  "logo": "https://novarisdata.com/assets/img/logo.png",
+  "sameAs": [
+    "https://www.linkedin.com/company/novarisdata/"
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "contactType": "sales",
+      "email": "contact@novarisdata.com",
+      "telephone": "+56 9 2962 1546",
+      "areaServed": "CL",
+      "availableLanguage": [
+        "es",
+        "en"
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="brand">
+      <a href="index.html" aria-label="Go to home">
+        <img src="../assets/img/logo.png" alt="Novaris Data" />
+      </a>
+    </div>
+    <nav class="links" aria-label="Primary">
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="../gracias.html" lang="es">ES</a>
+    </nav>
+  </header>
+
+  <main id="content" class="section container">
+    <section class="card" style="text-align:center; padding:40px;">
+      <h1 class="section-title">Thank you for your message!</h1>
+      <p>We’ve received your information and will get back to you within 24 hours.</p>
+      <a href="index.html" class="btn btn-primary" style="margin-top:20px;">Back to home</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © 2025 Novaris Data · 
+      <a href="mailto:contact@novarisdata.com">contact@novarisdata.com</a> · 
+      <a href="tel:+56929621546">+56 9 2962 1546</a> ·
       <a href="https://www.linkedin.com/company/novarisdata/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
     <p>Santiago, Chile</p>
 </footer>
 </body>
 </html>
+
+ } | Select-Object -Unique
+    if ($t -notcontains 'noopener')   { $t += 'noopener' }
+    if ($t -notcontains 'noreferrer') { $t += 'noreferrer' }
+    ($m.Value -replace 'rel=(["''])([^"'']*)\1', 'rel=' + $q + ($t -join ' ') + $q)
+  >LinkedIn</a>
+    </div>
+    <p>Santiago, Chile</p>
+</footer>
+</body>
+</html>
+
 

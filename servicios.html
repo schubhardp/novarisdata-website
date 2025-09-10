@@ -118,6 +118,130 @@
       © 2025 Novaris Data — Consulting · Development · IT Solutions ·
       <a href="mailto:contact@novarisdata.com">contact@novarisdata.com</a> ·
       <a href="tel:+56929621546">+56 9 2962 1546</a> ·
+      
+    param($m)
+    $q = $m.Groups[1].Value
+    $v = $m.Groups[2].Value
+    $t = ($v -split '\s+') | Where-Object { <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Servicios — Novaris Data</title>
+  <meta name="description" content="Consultoría IT, desarrollo a medida y gestión de datos. Soluciones seguras, mantenibles y orientadas a resultados." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <meta property="og:title" content="Servicios — Novaris Data" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/og-cover.png" />
+  <meta property="og:description" content="Consultoría IT, desarrollo a medida y gestión de datos." />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/favicon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Novaris Data",
+  "url": "https://novarisdata.com/",
+  "logo": "https://novarisdata.com/assets/img/logo.png",
+  "sameAs": [
+    "https://www.linkedin.com/company/novarisdata/"
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "contactType": "sales",
+      "email": "contact@novarisdata.com",
+      "telephone": "+56 9 2962 1546",
+      "areaServed": "CL",
+      "availableLanguage": [
+        "es",
+        "en"
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="brand">
+      <a href="index.html" aria-label="Ir al inicio">
+        <img src="assets/img/logo.png" alt="Novaris Data" />
+      </a>
+    </div>
+    <nav class="links" aria-label="Principal">
+      <a href="servicios.html" aria-current="page">Servicios</a>
+      <a href="sobre-nosotros.html">Sobre nosotros</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="en/services.html" lang="en">EN</a>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" aria-labelledby="titulo-servicios">
+      <div class="container">
+        <p class="tagline">Novaris Data — Consulting · Development · IT Solutions</p>
+        <h1 id="titulo-servicios" class="hero-title">Servicios</h1>
+        <p class="hero-subtitle">Entregamos valor en ciclos cortos, con calidad y foco en negocio.</p>
+      </div>
+    </section>
+
+    <section class="section container" aria-labelledby="servicios-oferta">
+      <h2 id="servicios-oferta" class="section-title">¿Qué hacemos?</h2>
+      <p class="tagline">Comenzamos con una llamada de descubrimiento y te enviamos una propuesta con alcance, entregables, plazos y <strong>métricas de éxito</strong>. Iteramos por sprints para que veas valor desde el inicio.</p>
+
+      <div class="grid-3">
+        <article class="card">
+          <h3>Consultoría IT</h3>
+          <p>Estrategia y roadmap; adopción de cloud (AWS/Azure); seguridad; integraciones entre sistemas.</p>
+          <a class="btn btn-outline" href="contacto.html">Solicitar reunión</a>
+        </article>
+        <article class="card">
+          <h3>Desarrollo a medida</h3>
+          <p>Web apps y APIs escalables con buenas prácticas: versionado, revisiones, pruebas y CI/CD.</p>
+          <p><strong>Stack:</strong> Python (Django, FastAPI), React, Node.js, Docker.</p>
+          <a class="btn btn-outline" href="contacto.html">Conversar proyecto</a>
+        </article>
+        <article class="card">
+          <h3>Gestión de datos</h3>
+          <p>Modelado, calidad y performance de bases de datos; seguridad y alta disponibilidad.</p>
+          <p><strong>DB:</strong> PostgreSQL · Oracle · MySQL.</p>
+          <a class="btn btn-outline" href="contacto.html">Hablemos</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" aria-labelledby="industrias">
+      <h2 id="industrias" class="section-title">Industrias</h2>
+      <p class="tagline">Finanzas & Seguros · Salud · Retail & E-commerce · Turismo · Servicios Profesionales</p>
+    </section>
+
+    <!-- CTA corregido para móvil: usa clases .cta y .hero-buttons (wrap) -->
+    <section class="section container" aria-labelledby="cta-serv">
+      <div class="card cta">
+        <div>
+          <h2 id="cta-serv" class="section-title" style="margin:0;">¿Listo para conversar?</h2>
+          <p style="margin:6px 0 0;">Cuéntanos tu caso y te enviaremos una propuesta en 24 horas.</p>
+        </div>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="contacto.html">Contactar ahora</a>
+          <a class="btn btn-outline" href="sobre-nosotros.html">Conócenos</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © 2025 Novaris Data — Consulting · Development · IT Solutions ·
+      <a href="mailto:contact@novarisdata.com">contact@novarisdata.com</a> ·
+      <a href="tel:+56929621546">+56 9 2962 1546</a> ·
       <a href="https://www.linkedin.com/company/novarisdata/" target="_blank" rel="noopener">LinkedIn</a> ·
       <a href="privacidad.html">Privacidad</a> ·
       <a href="cookies.html">Cookies</a>
@@ -126,4 +250,18 @@
 </footer>
 </body>
 </html>
+
+ } | Select-Object -Unique
+    if ($t -notcontains 'noopener')   { $t += 'noopener' }
+    if ($t -notcontains 'noreferrer') { $t += 'noreferrer' }
+    ($m.Value -replace 'rel=(["''])([^"'']*)\1', 'rel=' + $q + ($t -join ' ') + $q)
+  >LinkedIn</a> ·
+      <a href="privacidad.html">Privacidad</a> ·
+      <a href="cookies.html">Cookies</a>
+    </div>
+    <p>Santiago, Chile</p>
+</footer>
+</body>
+</html>
+
 
