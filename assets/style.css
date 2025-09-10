@@ -578,23 +578,35 @@ a,
 
 .about-intro {
   display: grid;
-  grid-template-columns: 1.2fr .8fr;
-  gap: 2rem;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  gap: clamp(1rem, 2.5vw, 2rem);
   align-items: start;
 }
 
 .about-intro .about-media {
-  max-width: 520px;
+  max-width: clamp(460px, 36vw, 560px);
   width: 100%;
   margin-left: auto;
+  margin-bottom: .5rem;
 }
 
 .about-intro .about-media img {
   width: 100%;
   height: auto;
   display: block;
+  aspect-ratio: 3 / 2;
+  /* altura estable */
+  object-fit: cover;
+  /* recorte agradable si cambia el ratio */
   border-radius: 1rem;
   box-shadow: var(--shadow);
+}
+
+.about-intro .about-media figcaption {
+  margin-top: .4rem;
+  font-size: .95rem;
+  color: var(--muted);
+  text-align: center;
 }
 
 @media (max-width: 992px) {
